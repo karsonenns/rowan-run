@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3FLY3F446V.org.karson.GoApps"],
+        "components": [
+          {
+            "/": "/.well-known/*",
+            "exclude": true,
+            "comment": "Never a universal link. Apple's CDN fetches this file itself, and nothing under here is a screen."
+          },
+          {
+            "/": "/*",
+            "comment": "Every path on this host is a Go route. The host exists only to deep-link, so claiming everything means adding a screen never means re-publishing this file and waiting out the ~weekly device re-check. Enumerate (/note/*, /930/*, ...) only if the host ever serves something a browser should keep."
+          }
+        ]
+      }
+    ]
+  }
+}
