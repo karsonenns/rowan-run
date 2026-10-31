@@ -14,3 +14,5 @@ A small, deliberately mysterious public landing page: the word "rowan", drifting
 
 ## Change log
 - 2026-09-26: created and live.
+
+- 2026-10-31: added go.rowan.run (DNS A 149.56.111.214 via Namecheap API, Coolify domain). It serves only the Go app AASA file; every other path 302s to http://go/<path>?web=1 (nginx server block). IOS-53. Coolify API token for the deploy was minted with ovh-coolify-vps/coolify-token.sh (the root-team one is revoked).
